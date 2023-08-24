@@ -7,7 +7,7 @@ cd /home/sotpurk/airport-node/
 node index.js
 
 done &
-sleep 3
+sleep 10
 while true; do
 tput setaf 3; echo "Starting Browser"; tput sgr0
 sleep 1
