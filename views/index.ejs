@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Excel Viewer</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Excel Data</h1>
+  <table id="data-table">
+    <thead>
+      <tr>
+        <th>Airline Code</th>
+        <th>Airline Name</th>
+        <th>Zone</th>
+        <th>Gate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% data.forEach(row => { %>
+        <tr>
+          <td><%= row.airline_code %></td>
+          <td><%= row.airline_name %></td>
+          <td><%= row.zone %></td>
+          <td><%= row.gate %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+  <script>
+    const dataTable = document.getElementById('data-table');
+
+    // Function to update table rows with new data
+    function updateTable(data) {
+      const tbody = dataTable.querySelector('tbody');
+      tbody.innerHTML = '';
+
+      data.forEach(row => {
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+          <td>${row.airline_code}</td>
+          <td>${row.airline_name}</td>
+          <td>${row.zone}</td>
+          <td>${row.gate}</td>
+        `;
+        tbody.appendChild(newRow);
+      });
+    }
+
+    // Connect to WebSocket
+    const socket = new WebSocket(`ws://localhost:${location.port}`);
+
+    // Handle WebSocket messages
+    socket.addEventListener('message', event => {
+      const newData = JSON.parse(event.data);
+      updateTable(newData);
+    });
+  </script>
+</body>
+</html>
+
