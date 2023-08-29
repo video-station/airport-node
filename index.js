@@ -6,7 +6,7 @@ const xlsx = require('xlsx');
 const WebSocket = require('ws');
 
 const app = express();
-const port = 3000;
+const port = 3002;
 
 const excelFilePath = 'data/airport.xlsx'; // Replace with the actual path
 const viewsPath = path.join(__dirname, 'views');

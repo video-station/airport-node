@@ -33,7 +33,7 @@ workbook.xlsx
   });
 
 function updateExcelFile() {
-  const worksheet = workbook.getWorksheet("Entries");
+  const worksheet = workbook.getWorksheet();
   worksheet.spliceRows(2, worksheet.rowCount - 1); // Remove existing data rows (except header)
 
   for (const entry of entries) {
