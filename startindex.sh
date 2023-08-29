@@ -7,4 +7,4 @@ node index.js &
 
 sleep 5
 
-chromium --app=http://127.0.0.1:3002 --start-fullscreen
+chromium-browser --app=http://127.0.0.1:3002 --start-fullscreen

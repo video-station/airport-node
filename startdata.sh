@@ -13,7 +13,7 @@ sleep 5
 # tput setaf 3; echo "Starting Browser"; tput sgr0
 # sleep 1
 
-chromium --app=http://127.0.0.1:3001 
+chromium-browser --app=http://127.0.0.1:3001 
 
 
 
