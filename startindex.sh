@@ -1,6 +1,6 @@
-pkill -f chromium 
-pkill -f node
-pkill -f npm
+pkill -f chromium || exit 0
+pkill -f node || exit 0
+pkill -f npm || exit 0
 
 cd /home/sotpurk/airport-node/
 node index.js &
