@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=VideoStationData
+Comment=Test the terminal running a command inside it
+Exec=/usr/bin/bash /home/sotpurk/airport-node/startdata.sh
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Application;

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=VideoStationExcel
+Comment=Test the terminal running a command inside it
+Exec=/usr/bin/gnumeric /home/sotpurk/airport-node/data/airport.xlsx
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=Application;

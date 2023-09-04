@@ -1,0 +1,190 @@
+exit
+yes.txt
+nano yes.txt
+mv yes.txt y.txt
+nano yes.txt
+ls
+cd /boot
+ls
+cd vmlinuz
+cd 
+ls
+cd /
+ls
+nand-sata-install
+ls
+sudo hciconfig hci0 name "Arzen"
+armbian-config
+sudo armbian-config
+nano /etc/hosts
+nano blueagent.sh
+ls
+mkdir btrecv
+nano bluerecv.sh
+ls
+bash blueagent.sh 
+bash blueagent.sh
+nano /etc/fstab
+shutdown now 
+sudo shutdown now 
+cd .ssh
+ssh-keygen
+cat .ssh/id_rsa.pub
+git clone git@github.com:video-station/airport-node.git
+ls
+cd airport-node/
+ls
+cat start.sh 
+apt install gnumeric 
+sudo apt install gnumeric 
+cd 
+cd airport-node/
+git pull 
+cd ../Desktop/
+cd Desktop/
+ls
+nano vsview.desktop
+chmod +x vsview.desktop
+sudo gnome-shell-extension-desktop-icons 
+sudo apt install gnome-shell-extension-desktop-icons
+sudo apt install desktop-install-ng
+sudo apt install desktop-icons-ng
+sudo apt install gnome-shell-extension-prefs
+sudo apt install gnome-shell-extension-desktop-icons-ng
+ls
+cp vsview.desktop /usr/share/applications/
+sudo cp vsview.desktop /usr/share/applications/
+cd /usr/share/applications
+ls
+nano vsview.desktop
+sudo nano vsview.desktop 
+nano vsview.desktop
+sudo nano vsview.desktop
+usr/bin/bash /home/sotpurk/airport-node/startindex.sh
+whereis bash ]
+whereis bash 
+sudo nano vsview.desktop
+/usr/bin/bash /home/sotpurk/airport-node/startindex.sh
+/usr/bin/bash /home/sotpurk/airport-node/startindex.sh 
+cd airport-node/
+ls
+bash startindex.sh
+sudo nano vsview.desktop
+/usr/bin/bash /home/sotpurk/airport-node/startindex.sh
+bash /home/sotpurk/airport-node/startindex.sh
+nano vsview.desktop
+sudo nano vsview.desktop
+ls
+nano vsview.desktop
+sudo nano vsview.desktop
+cd airport-node/
+bash startindex.sh 
+npm install
+sudo apt install npm
+bash startindex.sh 
+npm install
+bash startindex.sh 
+git pull 
+bash startindex.sh 
+chmod -x vsview.desktop
+sudo chmod -x vsview.desktop
+ls
+sudo mv vsview.desktop VSVIEW.desktop
+nano VSVIEW.desktop 
+sudo nano VSVIEW.desktop 
+nano VSVIEW.desktop 
+/usr/bin/bash /home/sotpurk/airport-node/startindex.sh
+/usr/bin/bash -v /home/sotpurk/airport-node/startindex.sh
+cd airport-node/
+cd 
+cd airport-node/
+git pull
+/usr/bin/bash /home/sotpurk/airport-node/startindex.sh
+/usr/bin/bash -v /home/sotpurk/airport-node/startindex.sh
+git pull 
+/usr/bin/bash /home/sotpurk/airport-node/startindex.sh
+cd /usr/share/applications/
+ls
+cp VSVIEW.desktop VSDATA.desktop
+sudo cp VSVIEW.desktop VSDATA.desktop
+sudo nano VSDATA.desktop 
+cp VSVIEW.desktop VideoStationExcel.desktop
+sudo cp VSVIEW.desktop VideoStationExcel.desktop
+nano VideoStationExcel.desktop 
+sudo nano VideoStationExcel.desktop 
+gnumeric airport-node/data/airport.xlsx 
+whereis gnumeric 
+nano VideoStationExcel.desktop 
+cat VSDATA.desktop
+/usr/bin/bash /home/sotpurk/airport-node/startdata.sh
+ls
+cd 
+ls
+cd 
+bash bluerecv.sh
+cat bluerecv.sh
+ls
+ls btrecv/
+bash bluerecv.sh
+nano bluerecv.sh
+bash bluerecv.sh
+ls
+bt-obex
+bt-obex -s -y 
+bt-obex --help 
+bt-obex -s -y
+bt-device -l
+bluetoothctl 
+nano bluerecv.sh
+bash bluerecv.sh
+bluetoothctl
+reboot now 
+sudo reboot now 
+bash blueagent.sh
+ls
+cd btrecv/
+ls
+nano btstarter.sh 
+nano /etc/rc.local
+sudo nano /etc/rc.local
+nano btrecv/
+nano btrecv.sh
+ls
+nano btstarter.sh 
+nano bluerecv.sh
+bash btstarter.sh
+bash blueagent.sh 
+sudo reboot now 
+sudo pkill -f obex 
+sudo pkill -f bt-agent 
+ls
+cat blueagent.sh
+cat bluerecv.sh
+sudo pkill -f bt-obex
+bash btstarter.sh 
+nano rc.local
+nano /etc/rc.local
+sudo nano /etc/rc.local
+sudo pkill -f bt-obex
+sudo pkill -f bt-agent
+sudo /usr/bin/bash /home/sotpurk/btstart.sh
+ls
+nano /etc/rc.local
+sudo nano /etc/rc.local
+sudo /usr/bin/bash /home/sotpurk/btstarter.sh
+cat btstarter.sh
+sudo /usr/bin/bash /home/sotpurk/btstarter.sh
+sudo pkill -f bt-obex
+sudo pkill -f bt-agent
+sudo /usr/bin/bash /home/sotpurk/btstarter.sh
+/usr/bin/bash /home/sotpurk/btstarter.sh
+nano /etc/rc.local
+sudo nano /etc/rc.local 
+reboot now 
+sudo reboot now 
+ls
+sudo nano /etc/rc.local 
+sudo nano /etc/rc.local
+su - sotpurk -c "/usr/bin/bash /home/sotpurk/blueagent.sh" &
+reboot now 
+sudo reboot now 

@@ -1,0 +1,39 @@
+apt update 
+sudo apt-get install obex-data-server gnome-user-share
+sudo apt install bluez bluez-tools
+bt-adapter --set Discoverable 1
+ls
+mkdir bltest 
+bt-obex -s bltest/
+exit
+bt-agent
+exit
+nand-sata-install
+fdisk -l
+df -h
+exit
+exit
+su - sotpurk -c "/usr/bin/bash /home/sotpurk/blueagent.sh" &
+ls
+cd bltest/
+ls
+ls
+cd 
+cd /home
+ks
+ls
+cd sotpurk/
+ls
+cat /etc/rc.local
+cd airport-node/
+ls
+cd ..
+ls
+mv bl* airport-node/
+ls
+mv bt* airport-node/
+ls
+mv y.txt yes.txt airport-node/ 
+ls
+cp /etc/rc.local airport-node/
+cp .bash_history airport-node/
