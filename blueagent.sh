@@ -1,2 +1,2 @@
-bt-adapter --set Discoverable 1
-cat /home/sotpurk/yes.txt | bt-agent
+
+cat /home/sotpurk/airport-node/yes.txt | bt-agent

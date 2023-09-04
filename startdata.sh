@@ -3,6 +3,11 @@
 # tput setaf 3; echo "Starting Node"; tput sgr0
 # sleep 3
 
+pkill -f chromium &
+pkill -f node &
+pkill -f npm &
+
+
 cd /home/sotpurk/airport-node/
 node data.js &
 
