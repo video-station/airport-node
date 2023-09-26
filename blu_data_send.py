@@ -10,7 +10,10 @@ rdev = redis.Redis(
 
 excel_file = 'data\\media.xlsx'  
 df = pd.read_excel(excel_file)
+
+df['path'] = 'downloads' + df['path']
 data = df.to_dict(orient='records')
+#folder = "/downloads"
 
 json_data = json.dumps(data)
 
