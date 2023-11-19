@@ -22,11 +22,11 @@ while True:
                 print("Switch is on................................................................")
                 subprocess.run("/bin/bash video -k && chvt 7", shell=True)
                 # subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && cd /home/sotpurk/airport-node/ && node index.js' &", shell=True)
-                subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && /bin/bash /home/sotpurk/airport-node/startindex.sh'" , shell=True)
+                subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && /bin/bash /home/sotpurk/airport-node/startindex.sh | exit 0'" , shell=True)
 
             else:
                 print("Switch is off................................................................................")
-                subprocess.run("/usr/bin/pkill -f chromium", shell=True)
+                subprocess.run("/usr/bin/pkill -f chromium |  exit 0", shell=True)
                 subprocess.run("/usr/bin/chvt 1 && /bin/bash video -s", shell=True)
             previous_state = current_state
 
