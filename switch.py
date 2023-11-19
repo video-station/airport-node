@@ -22,7 +22,7 @@ while True:
                 print("Switch is on................................................................")
                 subprocess.run("/bin/bash video -k && chvt 7", shell=True)
                 # subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && cd /home/sotpurk/airport-node/ && node index.js' &", shell=True)
-                subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && /bin/bash /home/sotpurk/airport-node/startindex.sh | exit 0'" , shell=True)
+                subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && /bin/bash /home/sotpurk/airport-node/startindex.sh &'" , shell=True)
 
             else:
                 print("Switch is off................................................................................")
