@@ -26,8 +26,8 @@ while True:
 
             else:
                 print("Switch is off................................................................................")
-                subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && pkill -f chromium && pkill -f chromium'", shell=True)
-                subprocess.run("chvt 1 && /bin/bash video -s", shell=True)
+                subprocess.run("/usr/bin/pkill -f chromium", shell=True)
+                subprocess.run("/usr/bin/chvt 1 && /bin/bash video -s", shell=True)
             previous_state = current_state
 
         time.sleep(1)  
