@@ -20,14 +20,14 @@ while True:
 
             if current_state == "on":
                 print("Switch is on................................................................")
-                subprocess.run("video -k && chvt 7 &", shell=True)
+                subprocess.run("/bin/bash video -k && chvt 7", shell=True)
                 # subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && cd /home/sotpurk/airport-node/ && node index.js' &", shell=True)
                 subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && /bin/bash /home/sotpurk/airport-node/startindex.sh'" , shell=True)
 
             else:
                 print("Switch is off................................................................................")
-                subprocess.run("/bin/bash /home/sotpurk/kill.sh && chvt 1", shell=True)
-                subprocess.run("video -s", shell=True)
+                subprocess.run("su - sotpurk -c 'export DISPLAY=:0 && pkill -f chromium && pkill -f chromium'", shell=True)
+                subprocess.run("chvt 1 && /bin/bash video -s", shell=True)
             previous_state = current_state
 
         time.sleep(1)  
