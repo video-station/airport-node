@@ -10,3 +10,8 @@ tput setaf 3; echo "Starting Switcher" ; tput sgr0
 sleep 3
 python3 -u /home/sotpurk/airport-node/switch.py #2>&1 | tee -a /logs/netman.log
 done &
+while true; do
+tput setaf 3; echo "Starting IR Sensor" ; tput sgr0
+sleep 3
+python3 -u /home/sotpurk/airport-node/evtest.py #2>&1 | tee -a /logs/netman.log
+done &
